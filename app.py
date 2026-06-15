@@ -87,6 +87,12 @@ def format_size(bytes_size):
 
 # Resolve active API key
 active_api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or ""
+if not active_api_key:
+    try:
+        active_api_key = st.secrets.get("GOOGLE_API_KEY", "") or st.secrets.get("GEMINI_API_KEY", "")
+    except Exception:
+        pass
+
 
 # -------------------------------------------------------------
 # AUTO-LOAD EXISTING DATABASE ON STARTUP
