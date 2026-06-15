@@ -32,6 +32,11 @@ An interactive, premium web application built with Streamlit and LangChain, desi
 
 ---
 
+## Live Demo
+https://ai-study-assistant-sathwik-reddy.streamlit.app/
+
+---
+
 ## 🛠️ Architecture & Technology Stack
 
 ```mermaid
