@@ -5,6 +5,7 @@ __pycache__/
 *.pyd
 
 # Environments
+.streamlit/secrets.toml
 .env
 .env.local
 .env.*.local
